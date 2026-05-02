@@ -1,0 +1,24 @@
+.green{
+    color: green;
+}
+
+#blue{
+    color: blue;
+}
+
+p{
+    color: aqua;
+}
+
+div p{
+    color:chartreuse
+}
+
+
+*{
+    background-color: darkkhaki;
+}
+
+h1, h2, h3{
+    color: brown;
+}

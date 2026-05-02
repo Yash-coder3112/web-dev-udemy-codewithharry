@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 55px;
+            width: 344px;
+            background-color:red;
+            padding: 34px;
+            margin: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">box 1</div>
+        <div id="box2" class="box">box 2</div>
+        <div class="box">box 3</div>
+    </div>
+
+
+    <script>
+        let box1=document.getElementById("box1")
+        let box2=document.getElementById("box2")
+        document.querySelector(".container").addEventListener("click",(e)=>{
+            console.log("container was clicked")
+            console.log(e.target.innerText)
+        })
+        box1.addEventListener("click",(e)=>{
+            console.log("box1 was clicked")
+            e.stopPropagation()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = 106;
+      let b = 32;
+      let sum = a + b;
+      let avg = sum / 2;
+      let averagePlusOne = avg + 1;
+      console.log(averagePlusOne);
+
+      // instead of the above process we can make a function in js
+      function avgplusone(a, b) {
+        let sum = a + b;
+        let avg = sum / 2;
+        let averagePlusOne = avg + 1;
+        return averagePlusOne
+      } 
+      console.log(avgplusone(106,32))
+
+
+
+
+
+    //   easy function
+      function greet(){
+        console.log("hello")
+      }
+      greet()
+
+
+
+
+
+    //   arrow function
+    const square=(num)=>{
+        return num*num
+    }
+    console.log(square(4)) 
+
+
+
+    </script>
+  </head>
+  <body></body>
+</html>

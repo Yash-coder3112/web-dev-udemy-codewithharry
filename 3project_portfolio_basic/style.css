@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #00ffde;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #014343; */
+  padding: 13px 0;
+  background-image: linear-gradient(to right, #0065f8, #4300ff);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Monoton", sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.hero {
+  /* background-color: #dee5e7; */
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  align-items: center;
+}
+
+.hero-left {
+  margin-right: 249px;
+  margin-bottom: 100px;
+}
+
+.hero-left .one {
+  font-size: 60px;
+}
+
+.hero-left .two {
+  font-size: 40px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hero-right {
+  width: 250px;
+  height: 350px;
+  background-image: url("yashimg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.btn {
+  background-color: rgb(0, 166, 255);
+  color: white;
+  font-weight: bolder;
+  border: 2px solid rgb(0, 166, 255);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(
+    circle farthest-corner at 3.7% 49.8%,
+    rgba(143, 232, 255, 1) 21.9%,
+    rgba(209, 243, 251, 1) 52.9%
+  );
+  border-top: 2px solid #32f7f7;
+  padding: 22px 100px;
+}
+
+.project-image img {
+  width: 39.5vw;
+  margin: 35px;
+  border-radius: 20px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info .text {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    89.9deg,
+    rgba(238, 3, 3, 1) 0%,
+    rgba(0, 22, 145, 1) 99.8%
+  );
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+
+  .hero-left {
+        margin-right: 20px;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+  .hero {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+  .project{
+    padding: 2px;
+  }
+}
+
+
+

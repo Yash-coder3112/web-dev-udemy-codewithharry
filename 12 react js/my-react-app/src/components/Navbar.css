@@ -1,0 +1,14 @@
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul li{
+    list-style: none;
+}
+
+div .nav{
+    background-color: tomato;
+    color: white;
+}

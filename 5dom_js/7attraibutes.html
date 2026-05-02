@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yash{
+            background-color: red;
+            color: blue;
+            width: 233px;
+            border: 2px solid blue;
+            padding: 34px;
+        }
+
+        .blue{
+            padding: 34px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div id="welcome" >welcome to my form</div>
+        <form action="">
+            <input type="text" id="name" value="yash">
+            <input type="submit"  value="submit">
+        </form>
+    </div>
+    <div class="container">
+        <img id="image" src="https://footballnewsindia.in/wp-content/uploads/2013/12/International-Management-Group.jpg" alt="this">
+        <button onclick="func1()">change color</button>
+
+    </div>
+
+
+
+    <script>
+        const img=document.getElementById("image")
+        console.log(image.getAttribute("alt"))
+        img.setAttribute("alt", "uranium")
+        console.log(image.getAttribute("alt"))
+        img.removeAttribute("alt")
+        console.log(image.getAttribute("alt"))
+
+
+
+        img.classList.add("yash")
+
+
+        function func1(){
+            img.classList.toggle("blue")
+        }
+    </script>
+</body>
+</html>
